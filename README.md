@@ -9,7 +9,7 @@ A beautifully designed food blog featuring recipes from around the world. Built 
 🔗 [Live Site](#) *(Replace # with your actual live link)*  
 
 ## **GitHub Repository**  
-📂 [GitHub Repo](#) *(Replace # with your GitHub repo link)*  
+📂 [GitHub Repo](https://github.com/Rawat107/Blog-App-usign-html-css.git)
 
 ---
 
