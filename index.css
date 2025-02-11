@@ -1,0 +1,364 @@
+/*Assignement 2 styling my html blog post cretively */
+
+/*Reset the default margins, paddings, and set box-sizing for all elements
+This is will help design consisten design on every browser and include padding and border*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /*Add default font*/
+}
+
+/*Set body background and text color*/
+body {
+  background-color: #efe7fc; /*Really light shade if violet*/
+  color: #333; /*Dark text for  contrast*/
+  line-height: 1.6; /*Improve text readability*/
+}
+
+/*Styling the home, here header*/
+#home {
+  background: #b284fa; /*A darker violet shade for better visualization*/
+  color: white;
+  text-align: center;
+  padding: 80px 20px 40px; /*Adding padding for spacing*/
+}
+
+/*Styling the header logo inside the h1*/
+.header-logo {
+  width: 100px; /*Reduce the size of the logo*/
+  height: auto; /*Responsive*/
+  vertical-align: middle; /*Align with text*/
+  margin-right: 10px;
+  animation: spin 8s linear infinite;
+}
+
+/*Header text styling*/
+header h1 {
+  font-size: 2.5rem; /*Rem makes it easier to scale elements across the entire page*/
+  font-weight: bold;
+  text-transform: uppercase; /*Make the title uppercase*/
+}
+
+/*Style the subscript so it comes below the title*/
+.subscript {
+  font-size: 1rem;
+  font-weight: normal;
+  display: block;
+}
+
+/*Styling the nav bar section */
+#nav-bar {
+  background-color: #282036;
+  color: white;
+  padding: 5px 15px; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px; 
+}
+
+
+/*Syylin the conatiner to spread items apart*/
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Keeps Home at left & others at right */
+  width: 100%;
+}
+
+/*Navigation logo styling*/
+.nav-logo {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  display: none;
+
+}
+
+/*Navbar home link text*/
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+
+/*Hamburge menu styling*/
+.hamburger {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  color: white;
+  margin-left: 10px;
+}
+
+/*Stylng the nav link*/
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: auto; /* Push links to the right */
+}
+
+/*Styling the appearence of the nav link*/
+#nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Adding hover effect on navigation links*/
+#nav-links li a:hover, .logo-text:hover{
+  background-color: #7048a3;
+  border-radius: 5px;
+  color: #e0d7ff;
+}
+
+/*Hide menu toggle checkbox*/
+#menu-toggle {
+  display: none;
+}
+
+/* Section styling for content areas */
+section {
+  width: 80%; 
+  margin: 30px auto; 
+  padding: 20px;
+  background-color: white; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  border-radius: 12px; 
+}
+
+/* Section headings styling */
+h2 {
+  color: #a885ff;
+  font-size: 2rem;
+  border-bottom: 3px solid #c39eff; 
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+  text-align: center; 
+}
+
+/* Recipe subheadings styling */
+.recipe h3 {
+  color: #333; 
+  font-size: 1.5rem; 
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Styling for content blocks within recipes */
+.summary,
+.ingredients,
+.steps,
+.conclusion {
+  text-align: justify; /* Align text properly */
+  border: 1px solid #c39eff; 
+  margin-top: 10px;
+  padding: 10px;
+  background: #f2f2fd; /* Light purple background */
+  border-radius: 8px;
+}
+
+.ingredients,
+.steps {
+  padding-left: 10px; 
+  list-style-position: inside; /* Ensures bullets/numbers are inside the padding */
+  border-radius: 9px;
+}
+
+/* Add bottom spacing for the conclusion section */
+.conclusion {
+  margin-bottom: 10px;
+}
+
+/*Styling the image inside the content*/
+.img {
+  width: 80%; /*Scale image width*/
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Styling for videos inside content */
+.vid {
+  width: 80%; /* Scale video width */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px; 
+}
+
+/* Hover effects for images and videos */
+.nav-logo:hover,
+.img:hover,
+.vid:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(1.1);
+}
+
+ul,
+ol {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/*Highlight about me in different color*/
+#about_me {
+  background-color: #ffefeb;
+  text-align: center;
+}
+
+#about_me p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/*Stuling contact diff way too.*/
+#contact {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/*Contacnt email styling*/
+#contact a {
+  color: #c39eff;
+  text-decoration: none; /*Removing underline*/
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline; /*Adding underline as hover effect*/
+  color: #e0d7ff;
+}
+
+/*Styling the contact form*/
+fieldset {
+  width: 80%;
+  max-width: 450px;
+  margin: auto;
+  border: 2px solid #c39eff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/*styling the input and text area*/
+input,
+textarea {
+  width: 100%; /* Ensured inputs are aligned */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  display: block;
+}
+
+/*Style the send button better*/
+#send-button {
+  background-color: #c39eff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  border-radius: 0.375rem;
+}
+
+#send-button:hover {
+  background-color: #e0d7ff;
+}
+
+#footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+#footer a {
+  color: #c39eff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  color: #e0d7ff;
+}
+
+/* Responsive styles for smaller screens */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .nav-logo {
+    display: block;
+  }
+
+  /*Change the widht and direction for nav bar for smaller screen devices*/
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #282036;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /*when check box is tickec that when we want nav link to show*/
+  #menu-toggle:checked ~ #nav-links {
+    display: flex;
+  }
+
+  #nav-links li a {
+    text-align: center;
+    padding: 10px;
+  }
+
+  /*Adjust widht of sction for smaller devices so it take full screen*/
+  section {
+    width: 95%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*End of styling*/
