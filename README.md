@@ -1,8 +1,4 @@
-Here's a unique and well-structured **README.md** file for your project:  
-
----
-
-### **World Cuisines - Recipe Blog**  
+# **World Cuisines - Recipe Blog**  
 A beautifully designed food blog featuring recipes from around the world. Built using **HTML, CSS, and JavaScript** to create an engaging and responsive experience.  
 
 ## **Live Demo**  
