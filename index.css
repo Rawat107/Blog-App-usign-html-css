@@ -23,6 +23,7 @@ This is will help design consistent design on every browser and include padding 
 
 /*Set body background and text color*/
 body {
+  display: flex;
   background-color: var(--tertiary-color); 
   color: var(--contrast-color); 
   line-height: 1.6; 
@@ -94,6 +95,11 @@ header h1 {
   display: none;
 
 }
+
+.nav-logo:hover {
+  animation: spin 1.5s linear;
+}
+
 
 /*Navbar home link text*/
 .logo-text {

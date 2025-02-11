@@ -1,4 +1,4 @@
-<!--Building a blogpost page following symantic html added everything like mentioned in the pdf and example.-->
+<!--Assignment1: Building a blogpost page following symantic html added everything like mentioned in the pdf and example.-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,403 +10,406 @@
   </head>
   <body>
     <!-- header section (introduction and top logo) -->
-    <header id="home">
-      <h1>
-        <!-- Logo is here -->
-        <img src="./media/logo.png" alt="logo" class="header-logo" /> World
-        Cuisines <sub class="subscript">by Vaibhav Rawat</sub>
-      </h1>
-      <!--used subscript tag to give it a logo like look-->
-      <hr />
-      <p class="introduction">
-        Welcome to World Cuisines! I'm Vaibhav Rawat, a full-stack developer in
-        training with a passion for both programming and perfecting dishes from
-        around the world. Here, you'll find recipes stripped down to their
-        essentials think of it as debugging dinner. Whether you're a rookie or a
-        home cook looking to experiment, this blog breaks down iconic meals into
-        approachable steps. From the comforting stretch of a perfectly baked
-        Italian pizza to the deep, aromatic layers of an Indian biryani, we'll
-        explore flavors from all over the world. And along the way, I will share
-        little tricks that even seasoned chefs might appreciate. So grab your
-        apron (or just a spoon), and let's turn simple ingredients into
-        something amazing!
-      </p>
-    </header>
-
-    <!-- Navigation bar -->
-    <nav id="nav-bar">
-      <div class="nav-container">
-        <!-- Logo inside navbar, it switches with home text in smaller screens -->
-        <a href="#home" class="logo">
-          <img src="./media/logo.png" alt="logo" class="nav-logo" />
-          <span class="logo-text">Home</span>
-        </a>
-
-        <!-- Adding hammburger menu for responsive navigation-->
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
-        <input type="checkbox" id="menu-toggle" /> <!--This is going ot help us build hamburger navigaton tab-->
-        <ul id="nav-links">
-          <li><a href="#chicken_biryani">Chicken biryani</a></li>
-          <li><a href="#pizza">Italian Pizza</a></li>
-          <li><a href="#sushi">Japanese Sushi</a></li>
-          <li><a href="#about_me">About me</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Recipe sections -->
-    <section id="chicken_biryani">
-      <h2>Chicken Dum Biryani</h2>
-      <article class="recipe" id="recipe-1">
-        <h3>The Secret Of Hyderabadi Chicken Dum Biryani</h3>
-        <p class="summary">
-          <!-- Summary of the recipe -->
-          <strong>Summary:</strong> Experience the magic of Hyderabadi Chicken
-          Dum Biryani a dish that's more than just a meal, it's a celebration of
-          flavors, aromas, and tradition. This biryani is the perfect blend of
-          fragrant basmati rice, tender marinated chicken, and a symphony of
-          rich, warming spices like saffron, cardamom, and cloves. Slow-cooked
-          using the traditional "dum" method, where the ingredients are sealed
-          together to lock in all the flavors, this biryani develops an
-          irresistible depth that makes every bite a burst of taste and texture.
-          Whether you're cooking for a festive gathering or simply treating
-          yourself, this biryani is the kind of dish that fills your home with
-          its intoxicating aroma and your heart with pure joy.
-        </p>
-        <p class="summary">
-          <em>Note:</em> These are the main ingredients; you can remove or add
-          according to your taste as that is what I do.
-        </p>
-        <ul class="ingredients">
-          <!-- List of ingredients -->
-          <li>Basmati Jeera Rice - 2 cups</li>
-          <li>Chicken - 1 kg, cut into pieces</li>
-          <li>Yogurt - 1 cup</li>
-          <li>Onions - 3 large, thinly sliced</li>
-          <li>Garlic and Ginger Paste - 2 tbsp</li>
-          <li>Spices (turmeric, red chili powder, garam masala, cumin)</li>
-          <li>Fresh Coriander and Mint Leaves</li>
-          <li>Saffron strands soaked in warm milk</li>
-        </ul>
-        <!-- Image of the ingredients -->
-        <img
-          src="./media/Biryani Ingredient.png"
-          alt="Chicken Biryani Ingredient"
-          width="500"
-          height="350"
-          class="img"
-        />
-        <ol class="steps">
-          <!--used ordered list cause we have to follow steps here.-->
-          <li>
-            Marinate the chicken with yogurt, garlic, ginger, and spices for at
-            least 2 hours.
-          </li>
-          <li>
-            Fry the onions until golden brown; reserve some for garnishing.
-          </li>
-          <li>Parboil the rice with a pinch of salt until it's 70% cooked.</li>
-          <li>
-            Layer the marinated chicken and parboiled rice in a heavy-bottomed
-            pot, alternating layers.
-          </li>
-          <li>
-            Drizzle saffron-infused milk over the layers, cover tightly, and
-            cook on low heat (dum) for 30-40 minutes.
-          </li>
-        </ol>
-        <!-- video fo the Recipe -->
-        <video
-          src="./media/Cooked Chicken Biryani.mp4"
-          controls
-          width="500"
-          height="350"
-          class="vid"
-        ></video>
-        <p class="conclusion">
-          <!-- Conclusion for the recipe -->
-          <strong>Conclusion:</strong> Hyderabadi Chicken Dum Biryani is more
-          than just a dish it's an experience. With every spoonful, you get
-          layers of beautifully spiced rice, succulent chicken, and the
-          lingering warmth of aromatic spices. It's the perfect way to bring a
-          piece of India's rich culinary heritage to your table. Serve it with a
-          side of cooling raita, a squeeze of lemon, and a sprinkle of fresh
-          coriander for the ultimate biryani feast. Whether it's your first time
-          making it or your hundredth, one thing is certain this dish never
-          fails to impress. Enjoy the labor of love that is biryani, and let its
-          flavors transport you straight to the heart of Hyderabad!
-        </p>
-      </article>
-      <hr />
-    </section>
-
-    <!-- Everything recipe follow the same templates  -->
-    <section id="pizza">
-      <h2>Italian Pizza</h2>
-      <article class="recipe" id="recipe-2">
-        <h3>The True Meaning Of Pizza</h3>
-        <p class="summary">
-          <strong>Summary:</strong> There's something truly special about making
-          a classic Italian pizza from scratch kneading the dough, watching it
-          rise, and crafting a perfect balance of flavors. This recipe brings
-          you the essence of Italy in every bite, featuring a light and crispy
-          crust, a vibrant homemade tomato sauce, and creamy fresh mozzarella,
-          all topped with fragrant basil leaves. It's a dish that proves that
-          simple, high-quality ingredients can create something extraordinary.
-          Whether you're using a traditional wood-fired oven or your home
-          kitchen's oven, this pizza is all about technique, tradition, and,
-          most importantly, taste.
-        </p>
-        <p class="summary">
-          <em>Note:</em> These are the main ingredients; you can remove or add
-          according to your taste as that is what I do.
-        </p>
-
-        <ul class="ingredients">
-          <li>Pizza Dough - 1 batch (homemade or store-bought)</li>
-          <li>Tomato Sauce - 1 cup</li>
-          <li>Fresh Mozzarella - 200g, sliced</li>
-          <li>Fresh Basil Leaves</li>
-          <li>Olive Oil - for drizzling</li>
-          <li>Salt &amp; Pepper - to taste</li>
-        </ul>
-        <img
-          src="./media/Pizza Ingredients.jpg"
-          alt="Pizza Ingredients"
-          width="500"
-          height="350"
-          class="img"
-        />
-        <ol class="steps">
-          <li>Preheat your oven to 475°F (245°C).</li>
-          <li>Roll out the pizza dough on a lightly floured surface.</li>
-          <li>Evenly spread tomato sauce over the dough.</li>
-          <li>
-            Add slices of mozzarella, add any topping you like or let it be(I
-            like Pepperoni) and sprinkle fresh basil leaves over the top.
-          </li>
-          <li>
-            Drizzle with olive oil, season with salt and pepper, then bake for
-            10-12 minutes until the crust is golden and the cheese is bubbly.
-          </li>
-        </ol>
-        <video
-          src="./media/Making pepperoni Pizza.mp4"
-          controls
-          width="500"
-          height="350"
-          class="vid"
-        ></video>
-        <p class="conclusion">
-          <strong>Conclusion:</strong> Few things in life are as satisfying as
-          pulling a hot, bubbly, and perfectly golden pizza out of the oven.
-          This recipe lets you embrace the spirit of Italian cooking minimal
-          ingredients, maximum flavor. The slightly charred crust, the tangy yet
-          sweet tomato sauce, and the melted mozzarella come together in a way
-          that's simply magical. So whether you're hosting a pizza night,
-          cooking for someone special, or just craving an authentic Italian
-          experience, this timeless pizza will always hit the spot. Pour
-          yourself a glass of wine, slice up your masterpiece, and enjoy the
-          true taste of Italy, right from your kitchen!
-        </p>
-      </article>
-      <hr />
-    </section>
-    <section id="sushi">
-      <h2>Japanese Sushi</h2>
-      <article class="recipe" id="recipe-3">
-        <h3>My Take On Sushi</h3>
-        <p class="summary">
-          <strong>Summary:</strong> Sushi isn't just food itis an art form. This
-          recipe guides you through the delicate process of making authentic
-          Japanese sushi at home, from perfectly seasoned vinegared rice to
-          choosing the freshest fish and crisp vegetables. Whether you're
-          rolling maki, crafting nigiri, or experimenting with your own
-          creations, sushi is all about precision, balance, and harmony. With
-          just a few simple yet high-quality ingredients, you can bring the
-          elegance and tradition of Japanese cuisine right into your kitchen.
-        </p>
-        <p class="summary">
-          <em>Note:</em> These are the main ingredients; you can remove or add
-          according to your taste as that is what I do.
-        </p>
-        <ul class="ingredients">
-          <li>Sushi Rice - 2 cups</li>
-          <li>Nori (Seaweed Sheets) - 10 pieces</li>
-          <li>Fresh Fish (Salmon/Tuna) - 300g, thinly sliced</li>
-          <li>Vegetables (Cucumber, Avocado) - thinly sliced</li>
-          <li>Soy Sauce, Wasabi &amp; Pickled Ginger - for serving</li>
-        </ul>
-        <img
-          src="./media/Sushi Ingredient.jpg"
-          alt="Sushi Ingredients"
-          width="500"
-          height="350"
-          class="img"
-        />
-        <ol class="steps">
-          <li>
-            Cook the sushi rice and season it with rice vinegar, sugar, and salt
-            while still hot.
-          </li>
-          <li>
-            Place a nori sheet on a bamboo mat and spread a thin layer of rice
-            over it.
-          </li>
-          <li>
-            Arrange the fresh fish and vegetables in a line over the rice.
-          </li>
-          <li>
-            Roll the nori tightly using the bamboo mat, then slice the roll into
-            bite-sized pieces.
-          </li>
-          <li>Serve with soy sauce, a dab of wasabi, and pickled ginger.</li>
-        </ol>
-        <video
-          src="./media/How to make Sushi.mp4"
-          controls
-          width="500"
-          height="350"
-          class="vid"
-        ></video>
-        <p class="conclusion">
-          <strong>Conclusion:</strong> Making sushi is more than just following
-          a recipe—it's about embracing patience, creativity, and the beauty of
-          simplicity. With each bite, you'll appreciate the perfect balance of
-          textures and flavors: the tenderness of fresh fish, the slight
-          stickiness of well-seasoned rice, and the refreshing crunch of
-          vegetables. Whether you're preparing a sushi platter for a special
-          occasion or just indulging in a quiet, homemade meal, this dish
-          connects you to centuries of Japanese culinary tradition. So grab your
-          chopsticks, dip your sushi in soy sauce (just a little!), and savor
-          the elegance of a dish that is both simple and deeply refined. Enjoy
-          the journey of sushi-making—because the best meals are the ones made
-          with care.
-        </p>
-      </article>
-      <hr />
-    </section>
-    <!-- Recipes end -->
-
-
-    <!-- About me Section -->
-    <section id="about_me">
-      <h2>About me</h2>
-      <!-- personal information like why did I start  -->
-      <h3>Welcome</h3>
-      <p>
-        Hi, I'm Vaibhav Rawat, and I started this blog to document my journey of
-        learning and experimenting in the kitchen. Cooking has always fascinated
-        me not just as a way to make great food but as a way to bring people
-        together. Through this blog, I hope to share my experiences,
-        discoveries, and lessons to make cooking more approachable for everyone.
-        Whether you're here to pick up a new recipe, improve your cooking
-        skills, or explore different cuisines, I want this space to be a source
-        of inspiration. Cooking doesn't have to be complicated it's about
-        understanding the basics, experimenting with flavors, and enjoying the
-        process. You'll find recipes from around the world, step-by-step guides,
-        essential cooking techniques, and food stories that celebrate the
-        diversity of global cuisine. No matter your experience level, my goal is
-        to help you build confidence in the kitchen.
-      </p>
-      <h3>Why I Started This Blog ?</h3>
-      <p>
-        My journey with food started as simple curiosity, but over time, it
-        evolved into a real passion. I realized that cooking isnit just about
-        following recipes; itis about understanding flavors, mastering
-        techniques, and appreciating the culture and history behind every dish.
-        From kneading the perfect pizza dough to perfecting the layering of an
-        aromatic biryani, every recipe has taught me something new. As a
-        full-stack developer in training, I approach cooking the same way I
-        approach coding—breaking things down into simple steps, troubleshooting
-        when something goes wrong, and continuously improving. Just like
-        debugging code, cooking is a process of trial and error, and every
-        mistake is an opportunity to learn. Through this blog, I want to make
-        recipes easy to follow, strip away unnecessary complexity, and help you
-        build confidence in the kitchen. Whether you're a beginner learning how
-        to make your first dish or a seasoned cook looking for new ideas, I hope
-        you find something here that excites you.
-      </p>
-      <h3>Join me</h3>
-      <p>
-        Cooking is a journey, and I'm excited to share mine with you. Whether
-        you're experimenting with a new dish, recreating a childhood favorite,
-        or just looking for a little inspiration, I hope this blog helps you
-        discover the joy of cooking. So grab your apron, turn up the music, and
-        let's make something delicious together! Thanks for stopping by, and I
-        hope you find recipes, ideas, and stories here that make your time in
-        the kitchen more fun, rewarding, and, of course, delicious!
-      </p>
-      <hr />
-    </section>
-
-
-    <!-- Contact me via email or send a message -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <!--Added href for email, so user can just click and get direct to email.-->
-      <p>
-        Email:
-        <a href="mailto:vaibhavrawat499@gmail.com">vaibhavrawat499@gmail.com</a>
-      </p>
-      <!-- <h3>Send a message</h3>  changed it to fieldset-->
-      <fieldset id="fieldset">
-        <legend>Send a Message</legend>
-        <form action="#" method="GET" id="contact-form">
-          <label for="fullname">FullName</label>
-          <input type="text" id="fullname" name="Fullname" />
-          <br />
-          <br />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email" />
-          <br />
-          <br />
-          <label for="message">Message</label>
-          <textarea
-            type=""
-            id="message"
-            name="Message"
-            maxlength="200"
-          ></textarea>
-          <br />
-          <br />
-          <input id="send-button" type="submit" value="Send" />
-        </form>
-      </fieldset>
-      <hr />
-      <!--Added horizontal rule like shown in the example-->
-    </section>
-
-
-    <!-- Footer section -->
-    <footer id="footer">
-      <p>Copyright &copy; 2025 World Cuisines</p>
-      <!--Added copy right like asked-->
-      <p>
-        Social Media:
-        <a href="https://www.x.com/vaibhavrawat495">
-          Twitter
-          <!--Added logos of social media for better, presentation-->
-          <img
-            src="https://static.vecteezy.com/system/resources/previews/027/395/710/original/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png"
-            alt="Twitter logo"
-            width="20"
-            height="20"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/vr107">
-          LinkdIn
-          <img
-            src="https://th.bing.com/th/id/R.d51da72e1f4675ba5aef9c956ed4c562?rik=FmeldpqK57Pqdw&riu=http%3a%2f%2fwww.freepnglogos.com%2fuploads%2fofficial-linkedin-logo----17.png&ehk=D2%2b5urO8gseetYQhxdSGq2qyTRbSvoavbbmoGEuOepo%3d&risl=&pid=ImgRaw&r=0"
-            alt="LinkedIn Logo"
-            width="20"
-            height="20"
-          />
-        </a>
-      </p>
-      <a href="#home"> Go to top</a>
-    </footer>
+     <div class="main-container">
+       <header id="home">
+         <h1>
+           <!-- Logo is here -->
+           <img src="./media/logo.png" alt="logo" class="header-logo" /> World
+           Cuisines <sub class="subscript">by Vaibhav Rawat</sub>
+         </h1>
+         <!--used subscript tag to give it a logo like look-->
+         <hr />
+         <p class="introduction">
+           Welcome to World Cuisines! I'm Vaibhav Rawat, a full-stack developer in
+           training with a passion for both programming and perfecting dishes from
+           around the world. Here, you'll find recipes stripped down to their
+           essentials think of it as debugging dinner. Whether you're a rookie or a
+           home cook looking to experiment, this blog breaks down iconic meals into
+           approachable steps. From the comforting stretch of a perfectly baked
+           Italian pizza to the deep, aromatic layers of an Indian biryani, we'll
+           explore flavors from all over the world. And along the way, I will share
+           little tricks that even seasoned chefs might appreciate. So grab your
+           apron (or just a spoon), and let's turn simple ingredients into
+           something amazing!
+         </p>
+       </header>
+   
+       <!-- Navigation bar -->
+       <nav id="nav-bar">
+         <div class="nav-container">
+           <!-- Logo inside navbar, it switches with home text in smaller screens -->
+           <a href="#home" class="logo">
+             <img src="./media/logo.png" alt="logo" class="nav-logo" />
+             <span class="logo-text">Home</span>
+           </a>
+   
+           <!-- Adding hammburger menu for responsive navigation-->
+           <label for="menu-toggle" class="hamburger">&#9776;</label>
+           <input type="checkbox" id="menu-toggle" /> <!--This is going ot help us build hamburger navigaton tab-->
+           <ul id="nav-links">
+             <li><a href="#chicken_biryani">Chicken biryani</a></li>
+             <li><a href="#pizza">Italian Pizza</a></li>
+             <li><a href="#sushi">Japanese Sushi</a></li>
+             <li><a href="#about_me">About me</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+         </div>
+       </nav>
+   
+       <!-- Recipe sections -->
+       <section id="chicken_biryani">
+         <h2>Chicken Dum Biryani</h2>
+         <article class="recipe" id="recipe-1">
+           <h3>The Secret Of Hyderabadi Chicken Dum Biryani</h3>
+           <p class="summary">
+             <!-- Summary of the recipe -->
+             <strong>Summary:</strong> Experience the magic of Hyderabadi Chicken
+             Dum Biryani a dish that's more than just a meal, it's a celebration of
+             flavors, aromas, and tradition. This biryani is the perfect blend of
+             fragrant basmati rice, tender marinated chicken, and a symphony of
+             rich, warming spices like saffron, cardamom, and cloves. Slow-cooked
+             using the traditional "dum" method, where the ingredients are sealed
+             together to lock in all the flavors, this biryani develops an
+             irresistible depth that makes every bite a burst of taste and texture.
+             Whether you're cooking for a festive gathering or simply treating
+             yourself, this biryani is the kind of dish that fills your home with
+             its intoxicating aroma and your heart with pure joy.
+           </p>
+           <p class="summary">
+             <em>Note:</em> These are the main ingredients; you can remove or add
+             according to your taste as that is what I do.
+           </p>
+           <ul class="ingredients">
+             <!-- List of ingredients -->
+             <li>Basmati Jeera Rice - 2 cups</li>
+             <li>Chicken - 1 kg, cut into pieces</li>
+             <li>Yogurt - 1 cup</li>
+             <li>Onions - 3 large, thinly sliced</li>
+             <li>Garlic and Ginger Paste - 2 tbsp</li>
+             <li>Spices (turmeric, red chili powder, garam masala, cumin)</li>
+             <li>Fresh Coriander and Mint Leaves</li>
+             <li>Saffron strands soaked in warm milk</li>
+           </ul>
+           <!-- Image of the ingredients -->
+           <img
+             src="./media/Biryani Ingredient.png"
+             alt="Chicken Biryani Ingredient"
+             width="500"
+             height="350"
+             class="img"
+           />
+           <ol class="steps">
+             <!--used ordered list cause we have to follow steps here.-->
+             <li>
+               Marinate the chicken with yogurt, garlic, ginger, and spices for at
+               least 2 hours.
+             </li>
+             <li>
+               Fry the onions until golden brown; reserve some for garnishing.
+             </li>
+             <li>Parboil the rice with a pinch of salt until it's 70% cooked.</li>
+             <li>
+               Layer the marinated chicken and parboiled rice in a heavy-bottomed
+               pot, alternating layers.
+             </li>
+             <li>
+               Drizzle saffron-infused milk over the layers, cover tightly, and
+               cook on low heat (dum) for 30-40 minutes.
+             </li>
+           </ol>
+           <!-- video fo the Recipe -->
+           <video
+             src="./media/Cooked Chicken Biryani.mp4"
+             controls
+             width="500"
+             height="350"
+             class="vid"
+           ></video>
+           <p class="conclusion">
+             <!-- Conclusion for the recipe -->
+             <strong>Conclusion:</strong> Hyderabadi Chicken Dum Biryani is more
+             than just a dish it's an experience. With every spoonful, you get
+             layers of beautifully spiced rice, succulent chicken, and the
+             lingering warmth of aromatic spices. It's the perfect way to bring a
+             piece of India's rich culinary heritage to your table. Serve it with a
+             side of cooling raita, a squeeze of lemon, and a sprinkle of fresh
+             coriander for the ultimate biryani feast. Whether it's your first time
+             making it or your hundredth, one thing is certain this dish never
+             fails to impress. Enjoy the labor of love that is biryani, and let its
+             flavors transport you straight to the heart of Hyderabad!
+           </p>
+         </article>
+         <hr />
+       </section>
+   
+       <!-- Everything recipe follow the same templates  -->
+       <section id="pizza">
+         <h2>Italian Pizza</h2>
+         <article class="recipe" id="recipe-2">
+           <h3>The True Meaning Of Pizza</h3>
+           <p class="summary">
+             <strong>Summary:</strong> There's something truly special about making
+             a classic Italian pizza from scratch kneading the dough, watching it
+             rise, and crafting a perfect balance of flavors. This recipe brings
+             you the essence of Italy in every bite, featuring a light and crispy
+             crust, a vibrant homemade tomato sauce, and creamy fresh mozzarella,
+             all topped with fragrant basil leaves. It's a dish that proves that
+             simple, high-quality ingredients can create something extraordinary.
+             Whether you're using a traditional wood-fired oven or your home
+             kitchen's oven, this pizza is all about technique, tradition, and,
+             most importantly, taste.
+           </p>
+           <p class="summary">
+             <em>Note:</em> These are the main ingredients; you can remove or add
+             according to your taste as that is what I do.
+           </p>
+   
+           <ul class="ingredients">
+             <li>Pizza Dough - 1 batch (homemade or store-bought)</li>
+             <li>Tomato Sauce - 1 cup</li>
+             <li>Fresh Mozzarella - 200g, sliced</li>
+             <li>Fresh Basil Leaves</li>
+             <li>Olive Oil - for drizzling</li>
+             <li>Salt &amp; Pepper - to taste</li>
+           </ul>
+           <img
+             src="./media/Pizza Ingredients.jpg"
+             alt="Pizza Ingredients"
+             width="500"
+             height="350"
+             class="img"
+           />
+           <ol class="steps">
+             <li>Preheat your oven to 475°F (245°C).</li>
+             <li>Roll out the pizza dough on a lightly floured surface.</li>
+             <li>Evenly spread tomato sauce over the dough.</li>
+             <li>
+               Add slices of mozzarella, add any topping you like or let it be(I
+               like Pepperoni) and sprinkle fresh basil leaves over the top.
+             </li>
+             <li>
+               Drizzle with olive oil, season with salt and pepper, then bake for
+               10-12 minutes until the crust is golden and the cheese is bubbly.
+             </li>
+           </ol>
+           <video
+             src="./media/Making pepperoni Pizza.mp4"
+             controls
+             width="500"
+             height="350"
+             class="vid"
+           ></video>
+           <p class="conclusion">
+             <strong>Conclusion:</strong> Few things in life are as satisfying as
+             pulling a hot, bubbly, and perfectly golden pizza out of the oven.
+             This recipe lets you embrace the spirit of Italian cooking minimal
+             ingredients, maximum flavor. The slightly charred crust, the tangy yet
+             sweet tomato sauce, and the melted mozzarella come together in a way
+             that's simply magical. So whether you're hosting a pizza night,
+             cooking for someone special, or just craving an authentic Italian
+             experience, this timeless pizza will always hit the spot. Pour
+             yourself a glass of wine, slice up your masterpiece, and enjoy the
+             true taste of Italy, right from your kitchen!
+           </p>
+         </article>
+         <hr />
+       </section>
+       <section id="sushi">
+         <h2>Japanese Sushi</h2>
+         <article class="recipe" id="recipe-3">
+           <h3>My Take On Sushi</h3>
+           <p class="summary">
+             <strong>Summary:</strong> Sushi isn't just food itis an art form. This
+             recipe guides you through the delicate process of making authentic
+             Japanese sushi at home, from perfectly seasoned vinegared rice to
+             choosing the freshest fish and crisp vegetables. Whether you're
+             rolling maki, crafting nigiri, or experimenting with your own
+             creations, sushi is all about precision, balance, and harmony. With
+             just a few simple yet high-quality ingredients, you can bring the
+             elegance and tradition of Japanese cuisine right into your kitchen.
+           </p>
+           <p class="summary">
+             <em>Note:</em> These are the main ingredients; you can remove or add
+             according to your taste as that is what I do.
+           </p>
+           <ul class="ingredients">
+             <li>Sushi Rice - 2 cups</li>
+             <li>Nori (Seaweed Sheets) - 10 pieces</li>
+             <li>Fresh Fish (Salmon/Tuna) - 300g, thinly sliced</li>
+             <li>Vegetables (Cucumber, Avocado) - thinly sliced</li>
+             <li>Soy Sauce, Wasabi &amp; Pickled Ginger - for serving</li>
+           </ul>
+           <img
+             src="./media/Sushi Ingredient.jpg"
+             alt="Sushi Ingredients"
+             width="500"
+             height="350"
+             class="img"
+           />
+           <ol class="steps">
+             <li>
+               Cook the sushi rice and season it with rice vinegar, sugar, and salt
+               while still hot.
+             </li>
+             <li>
+               Place a nori sheet on a bamboo mat and spread a thin layer of rice
+               over it.
+             </li>
+             <li>
+               Arrange the fresh fish and vegetables in a line over the rice.
+             </li>
+             <li>
+               Roll the nori tightly using the bamboo mat, then slice the roll into
+               bite-sized pieces.
+             </li>
+             <li>Serve with soy sauce, a dab of wasabi, and pickled ginger.</li>
+           </ol>
+           <video
+             src="./media/How to make Sushi.mp4"
+             controls
+             width="500"
+             height="350"
+             class="vid"
+           ></video>
+           <p class="conclusion">
+             <strong>Conclusion:</strong> Making sushi is more than just following
+             a recipe—it's about embracing patience, creativity, and the beauty of
+             simplicity. With each bite, you'll appreciate the perfect balance of
+             textures and flavors: the tenderness of fresh fish, the slight
+             stickiness of well-seasoned rice, and the refreshing crunch of
+             vegetables. Whether you're preparing a sushi platter for a special
+             occasion or just indulging in a quiet, homemade meal, this dish
+             connects you to centuries of Japanese culinary tradition. So grab your
+             chopsticks, dip your sushi in soy sauce (just a little!), and savor
+             the elegance of a dish that is both simple and deeply refined. Enjoy
+             the journey of sushi-making—because the best meals are the ones made
+             with care.
+           </p>
+         </article>
+         <hr />
+       </section>
+       <!-- Recipes end -->
+   
+   
+       <!-- About me Section -->
+       <section id="about_me">
+         <h2>About me</h2>
+         <!-- personal information like why did I start  -->
+         <h3>Welcome</h3>
+         <p>
+           Hi, I'm Vaibhav Rawat, and I started this blog to document my journey of
+           learning and experimenting in the kitchen. Cooking has always fascinated
+           me not just as a way to make great food but as a way to bring people
+           together. Through this blog, I hope to share my experiences,
+           discoveries, and lessons to make cooking more approachable for everyone.
+           Whether you're here to pick up a new recipe, improve your cooking
+           skills, or explore different cuisines, I want this space to be a source
+           of inspiration. Cooking doesn't have to be complicated it's about
+           understanding the basics, experimenting with flavors, and enjoying the
+           process. You'll find recipes from around the world, step-by-step guides,
+           essential cooking techniques, and food stories that celebrate the
+           diversity of global cuisine. No matter your experience level, my goal is
+           to help you build confidence in the kitchen.
+         </p>
+         <h3>Why I Started This Blog ?</h3>
+         <p>
+           My journey with food started as simple curiosity, but over time, it
+           evolved into a real passion. I realized that cooking isnit just about
+           following recipes; itis about understanding flavors, mastering
+           techniques, and appreciating the culture and history behind every dish.
+           From kneading the perfect pizza dough to perfecting the layering of an
+           aromatic biryani, every recipe has taught me something new. As a
+           full-stack developer in training, I approach cooking the same way I
+           approach coding—breaking things down into simple steps, troubleshooting
+           when something goes wrong, and continuously improving. Just like
+           debugging code, cooking is a process of trial and error, and every
+           mistake is an opportunity to learn. Through this blog, I want to make
+           recipes easy to follow, strip away unnecessary complexity, and help you
+           build confidence in the kitchen. Whether you're a beginner learning how
+           to make your first dish or a seasoned cook looking for new ideas, I hope
+           you find something here that excites you.
+         </p>
+         <h3>Join me</h3>
+         <p>
+           Cooking is a journey, and I'm excited to share mine with you. Whether
+           you're experimenting with a new dish, recreating a childhood favorite,
+           or just looking for a little inspiration, I hope this blog helps you
+           discover the joy of cooking. So grab your apron, turn up the music, and
+           let's make something delicious together! Thanks for stopping by, and I
+           hope you find recipes, ideas, and stories here that make your time in
+           the kitchen more fun, rewarding, and, of course, delicious!
+         </p>
+         <hr />
+       </section>
+   
+   
+       <!-- Contact me via email or send a message -->
+       <section id="contact">
+         <h2>Contact</h2>
+         <!--Added href for email, so user can just click and get direct to email.-->
+         <p>
+           Email:
+           <a href="mailto:vaibhavrawat499@gmail.com">vaibhavrawat499@gmail.com</a>
+         </p>
+         <!-- <h3>Send a message</h3>  changed it to fieldset-->
+         <fieldset id="fieldset">
+           <legend>Send a Message</legend>
+           <form action="#" method="GET" id="contact-form">
+             <label for="fullname">FullName</label>
+             <input type="text" id="fullname" name="Fullname" placeholder="John Doe"/>
+             <br />
+             <br />
+             <label for="email">Email</label>
+             <input type="email" id="email" name="Email" placeholder="Johndoe@gmail.com"/>
+             <br />
+             <br />
+             <label for="message">Message</label>
+             <textarea
+               type=""
+               id="message"
+               name="Message"
+               maxlength="400"
+               placeholder="Maximum 400 words"
+             ></textarea>
+             <br />
+             <br />
+             <input id="send-button" type="submit" value="Send" />
+           </form>
+         </fieldset>
+         <hr />
+         <!--Added horizontal rule like shown in the example-->
+       </section>
+   
+   
+       <!-- Footer section -->
+       <footer id="footer">
+         <p>Copyright &copy; 2025 World Cuisines</p>
+         <!--Added copy right like asked-->
+         <p>
+           Social Media:
+           <a href="https://www.x.com/vaibhavrawat495">
+             Twitter
+             <!--Added logos of social media for better, presentation-->
+             <img
+               src="https://static.vecteezy.com/system/resources/previews/027/395/710/original/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png"
+               alt="Twitter logo"
+               width="20"
+               height="20"
+             />
+           </a>
+           <a href="https://www.linkedin.com/in/vr107">
+             LinkdIn
+             <img
+               src="https://th.bing.com/th/id/R.d51da72e1f4675ba5aef9c956ed4c562?rik=FmeldpqK57Pqdw&riu=http%3a%2f%2fwww.freepnglogos.com%2fuploads%2fofficial-linkedin-logo----17.png&ehk=D2%2b5urO8gseetYQhxdSGq2qyTRbSvoavbbmoGEuOepo%3d&risl=&pid=ImgRaw&r=0"
+               alt="LinkedIn Logo"
+               width="20"
+               height="20"
+             />
+           </a>
+         </p>
+         <a href="#home"> Go to top</a>
+       </footer>
+     </div>
   </body>
 </html>
 
