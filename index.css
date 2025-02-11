@@ -1,7 +1,7 @@
 /*Assignement 2 styling my html blog post cretively */
 
 /*Reset the default margins, paddings, and set box-sizing for all elements
-This is will help design consisten design on every browser and include padding and border*/
+This is will help design consistent design on every browser and include padding and border*/
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +9,28 @@ This is will help design consisten design on every browser and include padding a
   font-family: "Poppins", sans-serif; /*Add default font*/
 }
 
+/* Define theme colors */
+:root {
+  --primary-color: #b284fa;
+  --secondary-color: #c39eff; 
+  --tertiary-color: #efe7fc; 
+  --accent-color: #7048a3; 
+  --nav-bar-color: #282036; 
+  --about-color: #ffefeb; 
+  --contrast-color: #333; 
+}
+
+
 /*Set body background and text color*/
 body {
-  background-color: #efe7fc; /*Really light shade if violet*/
-  color: #333; /*Dark text for  contrast*/
-  line-height: 1.6; /*Improve text readability*/
+  background-color: var(--tertiary-color); 
+  color: var(--contrast-color); 
+  line-height: 1.6; 
 }
 
 /*Styling the home, here header*/
 #home {
-  background: #b284fa; /*A darker violet shade for better visualization*/
+  background: var(--primary-color); 
   color: white;
   text-align: center;
   padding: 80px 20px 40px; /*Adding padding for spacing*/
@@ -37,7 +49,7 @@ body {
 header h1 {
   font-size: 2.5rem; /*Rem makes it easier to scale elements across the entire page*/
   font-weight: bold;
-  text-transform: uppercase; /*Make the title uppercase*/
+  text-transform: uppercase; 
 }
 
 /*Style the subscript so it comes below the title*/
@@ -49,7 +61,7 @@ header h1 {
 
 /*Styling the nav bar section */
 #nav-bar {
-  background-color: #282036;
+  background-color: var(--nav-bar-color);
   color: white;
   padding: 5px 15px; 
   position: fixed; 
@@ -64,7 +76,7 @@ header h1 {
 }
 
 
-/*Syylin the conatiner to spread items apart*/
+/*Styling the conatiner to spread items apart*/
 .nav-container {
   display: flex;
   align-items: center;
@@ -101,7 +113,7 @@ header h1 {
   margin-left: 10px;
 }
 
-/*Stylng the nav link*/
+/*Styling the nav link*/
 #nav-links {
   list-style: none;
   display: flex;
@@ -120,7 +132,7 @@ header h1 {
 
 /*Adding hover effect on navigation links*/
 #nav-links li a:hover, .logo-text:hover{
-  background-color: #7048a3;
+  background-color: var(--accent-color);
   border-radius: 5px;
   color: #e0d7ff;
 }
@@ -144,7 +156,7 @@ section {
 h2 {
   color: #a885ff;
   font-size: 2rem;
-  border-bottom: 3px solid #c39eff; 
+  border-bottom: 3px solid var(--secondary-color); 
   padding-bottom: 10px;
   margin-bottom: 22px;
   text-align: center; 
@@ -164,7 +176,7 @@ h2 {
 .steps,
 .conclusion {
   text-align: justify; /* Align text properly */
-  border: 1px solid #c39eff; 
+  border: 1px solid var(--secondary-color); 
   margin-top: 10px;
   padding: 10px;
   background: #f2f2fd; /* Light purple background */
@@ -218,7 +230,7 @@ ol {
 
 /*Highlight about me in different color*/
 #about_me {
-  background-color: #ffefeb;
+  background-color: var(--about-color);
   text-align: center;
 }
 
@@ -228,9 +240,9 @@ ol {
   margin-bottom: 10px;
 }
 
-/*Stuling contact diff way too.*/
+/*Styling contact different way too.*/
 #contact {
-  background-color: #333;
+  background-color: var(--contrast-color);
   color: white;
   text-align: center;
   padding: 30px;
@@ -239,14 +251,14 @@ ol {
 
 /*Contacnt email styling*/
 #contact a {
-  color: #c39eff;
+  color: var(--secondary-color);
   text-decoration: none; /*Removing underline*/
   font-weight: bold;
 }
 
 #contact a:hover {
   text-decoration: underline; /*Adding underline as hover effect*/
-  color: #e0d7ff;
+  color: #e0d7ff ;
 }
 
 /*Styling the contact form*/
@@ -254,7 +266,7 @@ fieldset {
   width: 80%;
   max-width: 450px;
   margin: auto;
-  border: 2px solid #c39eff;
+  border: 2px solid var(--secondary-color);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -273,7 +285,8 @@ textarea {
 
 /*Style the send button better*/
 #send-button {
-  background-color: #c39eff;
+  cursor: pointer;
+  background-color: var(--secondary-color);
   text-decoration: none;
   font-size: 1rem;
   text-align: center;
@@ -281,6 +294,7 @@ textarea {
   margin-bottom: 15px;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   border-radius: 0.375rem;
+  border: none;
 }
 
 #send-button:hover {
@@ -297,7 +311,7 @@ textarea {
 }
 
 #footer a {
-  color: #c39eff;
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -327,7 +341,7 @@ textarea {
     display: none;
     flex-direction: column;
     gap: 10px;
-    background-color: #282036;
+    background-color: var(--nav-bar-color);
     position: absolute;
     top: 100%;
     right: 0;
