@@ -2,7 +2,7 @@
 A beautifully designed food blog featuring recipes from around the world. Built using **HTML, CSS** to create an engaging and responsive experience.  
 
 ## **Live Demo**  
-🔗 [Live Site](https://rawat107.github.io/Blog-App-usign-html-css/) 
+🔗 [Live Site](https://rawat107.github.io/Blog-App-using-HTML-CSS/) 
 
 ## **GitHub Repository**  
 📂 [GitHub Repo](https://github.com/Rawat107/Blog-App-usign-html-css.git)
