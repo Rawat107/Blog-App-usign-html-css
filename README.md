@@ -1,5 +1,5 @@
 # **World Cuisines - Recipe Blog**  
-A beautifully designed food blog featuring recipes from around the world. Built using **HTML, CSS, and JavaScript** to create an engaging and responsive experience.  
+A beautifully designed food blog featuring recipes from around the world. Built using **HTML, CSS** to create an engaging and responsive experience.  
 
 ## **Live Demo**  
 🔗 [Live Site](https://rawat107.github.io/Blog-App-usign-html-css/) 
